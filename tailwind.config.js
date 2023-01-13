@@ -13,6 +13,8 @@ module.exports = {
         plus_red: '#FB676B',
         icon_blue: "#1A48C4",
         terms: '#737E9D', 
+        bg: '#EDEBEB',
+        gray_line: '#CCCCCC',
       }
     },
   },
