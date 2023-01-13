@@ -10,12 +10,12 @@ const Nav = () => {
     const categories = ['Charts', 'Music', 'Culture', 'Media', 'Business','Pro Tools', 'Billboard Espanol', 'Honda Music']
     const footer = ['About us', "Accessibility", "Advertise", "Shop", "Events", 'Careers', "Contact Us"]
   return (
-  <div className='text-white box-border'>
+  <div className='text-white h-[100vh]'>
         <div className='flex bg-blue items-center px-4 py-3 gap-4 '>
             <ImSearch size={25} className='w-[8%]'/>
             <input type='search' placeholder='Search' name='search' className='bg-blue focus:outline-none w-[92%] '/>
         </div>
-      <div className='bg-black h-[100vh]'>
+      <div className='bg-black h-full'>
         <div className=' py-8 px-4 flex justify-center gap-9 border-b-[0.5px] border-white'>
             <div className='flex w-[90%]  gap-[10%]'>
               <button className='py-2 w-[50%] outline outline-white outline-1 hover:cursor-pointer bg-cyan-500'>SUBSCRIBE</button>

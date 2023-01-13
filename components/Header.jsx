@@ -11,7 +11,7 @@ const Header = () => {
         <h2 className='font-[900] text-[30px]'>billboard</h2>
         <ImSearch size={30}/>
     </div>
-    <div className={nav? 'transition duration-500 -translate-y-[150%] scale-0' : 'transition duration-500 translate-y-0 '}>
+    <div className={!nav? 'transition duration-500 -translate-y-[150%] scale-0' : 'transition duration-500 translate-y-0 '}>
     <Nav />
     </div>
     </>
