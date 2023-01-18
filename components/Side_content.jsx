@@ -16,14 +16,17 @@ const Side_content = () => {
     <div className='flex flex-col '>
         {contents.map((content) => {
             return(
-                <div className='flex gap-3 items-center p-4 border-b-2 border-b-gray_line '>
+                <div className='flex gap-3 items-center p-4 border-b-2 border-b-gray_line' key={content.title}>
                     <img 
                     src={content.image}
                     alt={content.title}
                     className='w-[100px] h-[100px]'
                     />
                     <div className=''>
-                        <p className='font-semibold py-3 border-b-4 border-icon_blue w-[25%]'>{content.title}</p>
+                        <div className='w-max'>
+                        <p className='font-semibold pb-1'>{content.title}</p>
+                        <div className='w-full h-1 bg-icon_blue '></div>
+                        </div>
                         <p className='font-bold mt-2'>{content.subject}</p>
                     </div>
                 </div>
